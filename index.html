@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalervo Portfolio - Home</title>
+    <title>Kalervo Portfolio - Page 03</title>
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
@@ -17,8 +17,16 @@
     <div class="wrapper">
       <header class="header">
         <div class="inner header-inner">
-          <a class="logo" href="./index.html" aria-label="Kalervo Portfolio home">
-            <img class="logo-img" src="./assets/images/logo.svg" alt="KP Logo" />
+          <a
+            class="logo"
+            href="./index.html"
+            aria-label="Kalervo Portfolio home"
+          >
+            <img
+              class="logo-img"
+              src="./assets/images/logo.svg"
+              alt="KP Logo"
+            />
           </a>
 
           <nav class="nav" aria-label="Main navigation">
@@ -49,6 +57,14 @@
       <main>
         <section class="hero" id="home">
           <div class="inner hero-inner">
+            <div class="hero-banner">
+              <img
+                class="hero-person"
+                src="./assets/images/Banner.png"
+                alt="Kalervo portrait"
+              />
+            </div>
+
             <div class="hero-content">
               <h1 class="hero-title">
                 It’s Kalervo <br />
@@ -84,14 +100,6 @@
               </ul>
             </div>
 
-            <div class="hero-banner">
-              <img
-                class="hero-person"
-                src="./assets/images/Banner.png"
-                alt="Kalervo portrait"
-              />
-            </div>
-
             <div class="hero-intro">
               <p class="section-label">Formal Introduction</p>
 
@@ -111,51 +119,53 @@
                 <img src="./assets/icons/icon-arrow-right.svg" alt="" />
               </a>
             </div>
-          </div>
-        </section>
 
-        <section class="stats-founder" aria-label="Experience and founder brands">
-          <div class="inner stats-founder-inner">
-            <div class="stats-card">
-              <div class="stat-item">
-                <strong>19+</strong>
-                <span>Years of Experience</span>
+            <div class="hero-stats" aria-label="Experience and founder brands">
+              <div class="stats-card">
+                <div class="stat-item">
+                  <strong>19+</strong>
+                  <span>Years of Experience</span>
+                </div>
+
+                <div class="stat-divider" aria-hidden="true"></div>
+
+                <div class="stat-item">
+                  <strong>750+</strong>
+                  <span>Colleague/Team Members</span>
+                </div>
               </div>
 
-              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="founder-card">
+                <div class="founder-head">
+                  <h2>I’m Founder of</h2>
+                  <span class="founder-line" aria-hidden="true"></span>
+                </div>
 
-              <div class="stat-item">
-                <strong>750+</strong>
-                <span>Colleague/Team Members</span>
+                <ul class="brand-list" aria-label="Founder brand list">
+                  <li>
+                    <img src="./assets/icons/brand-01.png" alt="Brand logo 1" />
+                  </li>
+                  <li>
+                    <img src="./assets/icons/brand-02.png" alt="Brand logo 2" />
+                  </li>
+                  <li>
+                    <img src="./assets/icons/brand-03.png" alt="Brand logo 3" />
+                  </li>
+                  <li>
+                    <img src="./assets/icons/brand-04.png" alt="Brand logo 4" />
+                  </li>
+                  <li>
+                    <img src="./assets/icons/brand-05.png" alt="Brand logo 5" />
+                  </li>
+                </ul>
               </div>
-            </div>
-
-            <div class="founder-card">
-              <div class="founder-head">
-                <h2>I’m Founder of</h2>
-                <span class="founder-line" aria-hidden="true"></span>
-              </div>
-
-              <ul class="brand-list" aria-label="Founder brand list">
-                <li>
-                  <img src="./assets/icons/brand-01.png" alt="Brand logo 1" />
-                </li>
-                <li>
-                  <img src="./assets/icons/brand-02.png" alt="Brand logo 2" />
-                </li>
-                <li>
-                  <img src="./assets/icons/brand-03.png" alt="Brand logo 3" />
-                </li>
-                <li>
-                  <img src="./assets/icons/brand-04.png" alt="Brand logo 4" />
-                </li>
-                <li>
-                  <img src="./assets/icons/brand-05.png" alt="Brand logo 5" />
-                </li>
-              </ul>
             </div>
           </div>
         </section>
+
+        <button class="c-theme-toggle" aria-label="Toggle theme">
+          &#9728;
+        </button>
 
         <section class="testimonial" id="events">
           <div class="inner testimonial-inner">
@@ -173,8 +183,9 @@
             <article class="testimonial-card">
               <p class="testimonial-text">
                 Now that we’ve switched to a remote environment, with the use of
-                Trello, we can now limit the number of meetings we have regarding
-                specific projects and turn to Trello for updates instead.
+                Trello, we can now limit the number of meetings we have
+                regarding specific projects and turn to Trello for updates
+                instead.
               </p>
 
               <div class="testimonial-author">
@@ -191,7 +202,11 @@
               </div>
 
               <div class="testimonial-dots" aria-label="Testimonial pagination">
-                <button class="dot active" type="button" aria-label="Slide 1"></button>
+                <button
+                  class="dot active"
+                  type="button"
+                  aria-label="Slide 1"
+                ></button>
                 <button class="dot" type="button" aria-label="Slide 2"></button>
                 <button class="dot" type="button" aria-label="Slide 3"></button>
               </div>
@@ -220,9 +235,7 @@
                 molestie risus.
               </p>
 
-              <a class="btn btn-outline" href="#contact">
-                Book Appointments
-              </a>
+              <a class="btn btn-outline" href="#contact"> Book Appointments </a>
             </div>
           </div>
         </section>
@@ -322,12 +335,14 @@
 
                     <h3>
                       <a href="#">
-                        How to Beat the Heat: See It Coming More than a Week Ahead!
+                        How to Beat the Heat: See It Coming More than a Week
+                        Ahead!
                       </a>
                     </h3>
 
                     <p>
-                      Leverice this in one of Fastest Day. No matter your environ...
+                      Leverice this in one of Fastest Day. No matter your
+                      environ...
                     </p>
                   </div>
                 </article>
@@ -347,12 +362,14 @@
 
                     <h3>
                       <a href="#">
-                        Ten fastest-growing apps in 2022 including some you don’t know
+                        Ten fastest-growing apps in 2022 including some you
+                        don’t know
                       </a>
                     </h3>
 
                     <p>
-                      The fastest-growing apps in 2022. If there is one thing that...
+                      The fastest-growing apps in 2022. If there is one thing
+                      that...
                     </p>
                   </div>
                 </article>
@@ -372,7 +389,8 @@
 
                     <h3>
                       <a href="#">
-                        5 things to learn from type designers while dealing with visuals
+                        5 things to learn from type designers while dealing with
+                        visuals
                       </a>
                     </h3>
 
@@ -501,5 +519,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

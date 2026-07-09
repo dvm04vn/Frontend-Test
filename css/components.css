@@ -128,3 +128,42 @@
 .read-more:hover {
   color: var(--color-primary-dark);
 }
+.c-theme-toggle {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 1.8rem;
+}
+
+.c-theme-toggle:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+body.dark-mode {
+  background-color: #000;
+}
+
+body.dark-mode .c-theme-toggle {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+@media (max-width: 560px) {
+  .c-theme-toggle {
+    right: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
