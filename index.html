@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalervo Portfolio - Page 03</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/base.css" />
@@ -33,7 +36,7 @@
             <ul class="l-header__nav-list">
               <li class="l-header__nav-item">
                 <a
-                  class="l-header__nav-link l-header__nav-link--active"
+                  class="l-header__nav-link"
                   href="#home"
                 >
                   Home
@@ -252,14 +255,12 @@
 
         <section
           class="p-section-testimonial"
-          id="events"
-          aria-labelledby="testimonial-title"
         >
           <div class="wrapper p-section-testimonial__wrapper">
             <div class="p-section-testimonial__heading">
               <p class="p-section-testimonial__label">Customer Testimonial</p>
 
-              <h2 class="p-section-testimonial__title" id="testimonial-title">
+              <h2 class="p-section-testimonial__title">
                 Consumer thought about my product!
               </h2>
 
@@ -270,61 +271,105 @@
               </div>
             </div>
 
-            <article class="p-section-testimonial__card">
-              <p class="p-section-testimonial__text">
-                Now that we’ve switched to a remote environment, with the use of
-                Trello, we can now limit the number of meetings we have
-                regarding specific projects and turn to Trello for updates
-                instead.
-              </p>
+            <!-- Swiper -->
+            <div class="swiper p-section-testimonial__slider">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <article class="p-section-testimonial__card">
+                    <p class="p-section-testimonial__text">
+                      Now that we’ve switched to a remote environment, with the
+                      use of Trello, we can now limit the number of meetings we
+                      have regarding specific projects and turn to Trello for
+                      updates instead.
+                    </p>
 
-              <div class="p-section-testimonial__author">
-                <img
-                  class="p-section-testimonial__author-avatar"
-                  src="./assets/images/testimonial-avatar.png"
-                  alt="Kalvin Gilbert"
-                />
+                    <div class="p-section-testimonial__author">
+                      <img
+                        class="p-section-testimonial__author-avatar"
+                        src="./assets/images/testimonial-avatar.png"
+                        alt="Kalvin Gilbert"
+                      />
 
-                <div class="p-section-testimonial__author-info">
-                  <h3 class="p-section-testimonial__author-name">
-                    Kalvin Gilbert
-                  </h3>
-                  <p class="p-section-testimonial__author-position">
-                    Product Designer at Google
-                  </p>
+                      <div class="p-section-testimonial__author-info">
+                        <h3 class="p-section-testimonial__author-name">
+                          Kalvin Gilbert
+                        </h3>
+
+                        <p class="p-section-testimonial__author-position">
+                          Product Designer at Google
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <article class="p-section-testimonial__card">
+                    <p class="p-section-testimonial__text">
+                      Trello has completely changed how our distributed team
+                      collaborates. Everyone stays aligned without unnecessary
+                      meetings.
+                    </p>
+
+                    <div class="p-section-testimonial__author">
+                      <img
+                        class="p-section-testimonial__author-avatar"
+                        src="./assets/images/testimonial-avatar.png"
+                        alt="John Smith"
+                      />
+
+                      <div class="p-section-testimonial__author-info">
+                        <h3 class="p-section-testimonial__author-name">
+                          John Smith
+                        </h3>
+
+                        <p class="p-section-testimonial__author-position">
+                          UX Designer at Microsoft
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <article class="p-section-testimonial__card">
+                    <p class="p-section-testimonial__text">
+                      The workflow is much smoother than before. It has become
+                      our main collaboration tool for every project.
+                    </p>
+
+                    <div class="p-section-testimonial__author">
+                      <img
+                        class="p-section-testimonial__author-avatar"
+                        src="./assets/images/testimonial-avatar.png"
+                        alt="Emily Watson"
+                      />
+
+                      <div class="p-section-testimonial__author-info">
+                        <h3 class="p-section-testimonial__author-name">
+                          Emily Watson
+                        </h3>
+
+                        <p class="p-section-testimonial__author-position">
+                          Product Manager at Spotify
+                        </p>
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
 
-              <div
-                class="p-section-testimonial__dots"
-                aria-label="Testimonial pagination"
-              >
-                <button
-                  class="p-section-testimonial__dot p-section-testimonial__dot--active"
-                  type="button"
-                  aria-label="Slide 1"
-                ></button>
-
-                <button
-                  class="p-section-testimonial__dot"
-                  type="button"
-                  aria-label="Slide 2"
-                ></button>
-
-                <button
-                  class="p-section-testimonial__dot"
-                  type="button"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-            </article>
+              <!-- Swiper Pagination -->
+              <div class="p-section-testimonial__pagination"></div>
+            </div>
           </div>
         </section>
 
         <section
           class="p-section-about"
-          id="about"
-          aria-labelledby="about-title"
         >
           <div class="wrapper p-section-about__wrapper">
             <div class="p-section-about__visual">
@@ -339,7 +384,7 @@
             <div class="p-section-about__content">
               <p class="p-section-about__label">Read About Me</p>
 
-              <h2 class="p-section-about__title" id="about-title">
+              <h2 class="p-section-about__title">
                 I develop software that assists people digitally.
               </h2>
 
@@ -356,12 +401,12 @@
           </div>
         </section>
 
-        <section class="p-section-team" aria-labelledby="team-title">
+        <section class="p-section-team">
           <div class="wrapper p-section-team__wrapper">
             <div class="p-section-team__heading">
               <p class="p-section-team__label">Team Members</p>
 
-              <h2 class="p-section-team__title" id="team-title">
+              <h2 class="p-section-team__title">
                 Colleague &amp; team members
               </h2>
             </div>
@@ -373,7 +418,7 @@
             >
               <img
                 class="p-section-team__nav-icon"
-                src="./assets/icons/icon-arrow-left.svg"
+                src="./assets/icons/CaretLeft.svg"
                 alt=""
               />
             </button>
@@ -445,7 +490,7 @@
             >
               <img
                 class="p-section-team__nav-icon"
-                src="./assets/icons/icon-arrow-right.svg"
+                src="./assets/icons/CaretRight.svg"
                 alt=""
               />
             </button>
@@ -456,12 +501,12 @@
           </div>
         </section>
 
-        <section class="p-section-blog" aria-labelledby="blog-title">
+        <section class="p-section-blog">
           <div class="wrapper p-section-blog__wrapper">
             <div class="p-section-blog__heading">
               <p class="p-section-blog__label">Blogs</p>
 
-              <h2 class="p-section-blog__title" id="blog-title">
+              <h2 class="p-section-blog__title">
                 Latest article
               </h2>
             </div>
@@ -597,8 +642,6 @@
 
         <section
           class="p-section-contact"
-          id="contact"
-          aria-labelledby="contact-title"
         >
           <div class="wrapper p-section-contact__wrapper">
             <div class="p-section-contact__card">
@@ -614,7 +657,7 @@
               <div class="p-section-contact__content">
                 <p class="p-section-contact__label">Stay In Touch</p>
 
-                <h2 class="p-section-contact__title" id="contact-title">
+                <h2 class="p-section-contact__title">
                   You want to meet with me, Book appointments!
                 </h2>
 
@@ -728,7 +771,7 @@
         </div>
       </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -131,3 +131,41 @@ body.dark-mode .c-theme-toggle {
   color: var(--color-primary);
   background-color: var(--color-white);
 }
+
+/* Testimonial Swiper */
+
+.p-section-testimonial__slider {
+  width: 100%;
+}
+
+.p-section-testimonial__slider .swiper-slide {
+  height: auto;
+}
+
+.p-section-testimonial__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
+  position: relative;
+}
+
+.p-section-testimonial__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+
+  background-color: #d9d9d9;
+
+  opacity: 1;
+
+  transition: all 0.3s ease;
+}
+
+.p-section-testimonial__pagination .swiper-pagination-bullet-active {
+  width: 24px;
+
+  border-radius: 999px;
+
+  background-color: #143c3c;
+}
